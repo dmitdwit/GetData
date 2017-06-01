@@ -11,7 +11,7 @@ public class Address {
     private String suite;
     private String city;
     private String zipcode;
-    private List<Geo> geo;
+    private Geo geo;
 
     public String getStreet() {
         return street;
@@ -45,11 +45,11 @@ public class Address {
         this.zipcode = zipcode;
     }
 
-    public List<Geo> getGeo() {
+    public Geo getGeo() {
         return geo;
     }
 
-    public void setGeo(List<Geo> geo) {
+    public void setGeo(Geo geo) {
         this.geo = geo;
     }
 }

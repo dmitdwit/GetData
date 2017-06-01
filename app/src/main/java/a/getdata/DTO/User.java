@@ -10,10 +10,10 @@ public class User {
     private int id;
     private String username;
     private String email;
-    private List<Address> address;
+    private Address address;
     private String phone;
     private String website;
-    private String company;
+    private Company company;
 
     public int getId() {
         return id;
@@ -39,11 +39,11 @@ public class User {
         this.email = email;
     }
 
-    public List<Address> getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(List<Address> address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
@@ -63,11 +63,11 @@ public class User {
         this.website = website;
     }
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 }
