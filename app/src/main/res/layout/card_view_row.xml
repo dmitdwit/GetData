@@ -10,7 +10,8 @@
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        card_view:cardCornerRadius="10dp">
+        card_view:cardCornerRadius="10dp"
+        android:foreground="?selectableItemBackground">
 
         <TextView
             android:id="@+id/txt_name"

@@ -30,7 +30,7 @@ public class HandleReq {
                     adapter.notifyDataSetChanged();
                     Log.v("asd",response.body().toString());
                 }else{
-                    Log.v("asd","failed");
+                    Log.v("asd",response.message());
                 }
             }
 

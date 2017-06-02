@@ -12,6 +12,6 @@ import retrofit2.http.GET;
 
 public interface ApiEndpoint {
 
-    @GET("users/")
+    @GET("users.json/")
     Call<List<User>> getAllUser();
 }
