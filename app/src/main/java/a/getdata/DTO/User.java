@@ -1,5 +1,7 @@
 package a.getdata.DTO;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -15,6 +17,8 @@ public class User {
     private String phone;
     private String website;
     private Company company;
+    @SerializedName("photo_url")
+    private String photoUrl;
 
     public int getId() {
         return id;
@@ -78,5 +82,13 @@ public class User {
 
     public void setCompany(Company company) {
         this.company = company;
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photo_url) {
+        this.photoUrl = photo_url;
     }
 }

@@ -28,7 +28,7 @@ public class HandleReq {
                 if (response.isSuccessful()){
                     adapter.setUsers(response.body());
                     adapter.notifyDataSetChanged();
-                    Log.v("asd",response.body().toString());
+                    Log.v("asd",response.body().get(1).getPhotoUrl().toString());
                 }else{
                     Log.v("asd",response.message());
                 }
